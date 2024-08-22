@@ -8,12 +8,12 @@ struct Demo01 {
   @Builder
   sliderBuilder() {
     Slider({
-      value:this.containerWidth, // 绑定的值
+      value: this.containerWidth, // 绑定的值
       min: 400, // 最小值
       max: 1000, // 最大值
       style: SliderStyle.OutSet // 滑块在滑轨上
     })
-      .onChange((value)=>{
+      .onChange((value) => {
         this.containerWidth = value;
       })
       .blockColor(Color.White)
@@ -54,7 +54,7 @@ struct Demo01 {
             .width(150)
             .height(400)
             .backgroundColor('#c2baa6')
-            .flexShrink(1)// 1 压缩比例
+            .flexShrink(1) // 1 压缩比例
 
             // 中
             Row() {
@@ -66,7 +66,7 @@ struct Demo01 {
             .height(400)
             .backgroundColor('#68a67d')
             .justifyContent(FlexAlign.Center)
-            .flexGrow(1)// 拉伸比例
+            .flexGrow(1) // 拉伸比例
 
 
             // 右

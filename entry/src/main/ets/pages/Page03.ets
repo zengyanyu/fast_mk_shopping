@@ -12,7 +12,7 @@ struct Page03 {
       max: 500,
       style: SliderStyle.OutSet
     })
-      .onChange((value)=>{
+      .onChange((value) => {
         this.rate = value;
       })
       .blockColor(Color.White)

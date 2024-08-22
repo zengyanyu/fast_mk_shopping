@@ -13,7 +13,7 @@ struct Page04 {
       max: 400,
       style: SliderStyle.OutSet
     })
-      .onChange((value)=>{
+      .onChange((value) => {
         this.sliderHeight = value;
       })
       .blockColor(Color.White)
@@ -27,9 +27,10 @@ struct Page04 {
       min: 100,
       max: 400,
       style: SliderStyle.OutSet
-    }).onChange((value)=>{
-      this.sliderHeight = value
     })
+      .onChange((value) => {
+        this.sliderHeight = value
+      })
 
       .blockColor(Color.White)
       .width('60%')

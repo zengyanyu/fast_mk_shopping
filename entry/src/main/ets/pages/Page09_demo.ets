@@ -9,7 +9,6 @@ interface MovieItem {
 @Component
 struct Page09_demo {
   @StorageProp('currentBreakpoint') curBp: string = 'sm'
-
   items: MovieItem[] = [
     { title: '电影标题1', img: $r('app.media.ic_video_grid_1') },
     { title: '电影标题2', img: $r('app.media.ic_video_grid_2') },
@@ -34,16 +33,15 @@ struct Page09_demo {
               .width('100%')
               .fontSize(20)
               .fontWeight(600)
-
           }
         }
       })
     }
     .columnsTemplate(
       new BreakPointType({
-        sm:'1fr 1fr',
-        md:'1fr 1fr 1fr',
-        lg:'1fr 1fr 1fr 1fr'
+        sm: '1fr 1fr',
+        md: '1fr 1fr 1fr',
+        lg: '1fr 1fr 1fr 1fr'
       })
         .getValue(this.curBp)
     )

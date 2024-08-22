@@ -12,7 +12,7 @@ struct Page06 {
       max: 400,
       style: SliderStyle.OutSet
     })
-      .onChange((value)=>{
+      .onChange((value) => {
         this.rate = value;
       })
       .blockColor(Color.White)
@@ -91,13 +91,15 @@ struct Page06 {
 }
 
 @Component
-struct  son{
+struct son {
   aboutToAppear(): void {
     console.log('aboutToAppear')
   }
+
   aboutToDisappear(): void {
     console.log('aboutToDisappear')
   }
+
   build() {
     Text('123')
   }

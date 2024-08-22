@@ -19,13 +19,12 @@ struct Page05 {
     { id: 7, icon: $r('app.media.ic_nav_07'), title: '阿里拍卖' },
     { id: 8, icon: $r('app.media.ic_nav_08'), title: '阿里药房' },
   ]
-
-  info:string =''
+  info: string = ''
   // 只读属性 readonly 无法重新赋值
-  readonly infoPlus:string = ''
+  readonly infoPlus: string = ''
 
   aboutToAppear(): void {
-    this.info='么么哒'
+    this.info = '么么哒'
     // this.infoPlus='滚犊子'
     // this.appList=[]
     // this.appList.push()
@@ -40,13 +39,12 @@ struct Page05 {
       max: 730,
       style: SliderStyle.OutSet
     })
-      .onChange((value)=>{
+      .onChange((value) => {
         this.rate = value;
       })
       .blockColor(Color.White)
       .width('60%')
       .height(50)
-
       .position({ x: '20%', y: '80%' })
   }
 

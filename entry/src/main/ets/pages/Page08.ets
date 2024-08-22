@@ -13,9 +13,9 @@ struct Page08 {
         .height(100)
         .backgroundColor(
           new BreakPointType({
-            sm:Color.Red,
-            md:Color.Yellow,
-            lg:Color.Blue,
+            sm: Color.Red,
+            md: Color.Yellow,
+            lg: Color.Blue,
           }).getValue(this.curBp)
         )
 
@@ -24,9 +24,9 @@ struct Page08 {
       // md 图片 2
       // lg 图片 3
       Image(new BreakPointType({
-        sm:$r('app.media.ic_nav_01'),
-        md:$r('app.media.ic_nav_02'),
-        lg:$r('app.media.ic_nav_03'),
+        sm: $r('app.media.ic_nav_01'),
+        md: $r('app.media.ic_nav_02'),
+        lg: $r('app.media.ic_nav_03'),
       }).getValue(this.curBp))
         .width(300)
     }

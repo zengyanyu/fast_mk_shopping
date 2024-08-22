@@ -70,6 +70,7 @@ struct Page07 {
 
         }
         .width('100%')
+        
         this.slider()
       }
       .width('100%')

@@ -1,4 +1,3 @@
-
 export interface NavItem {
   id: number
   icon: ResourceStr
@@ -24,7 +23,7 @@ struct Demo02 {
       min: 200,
       max: 600,
       style: SliderStyle.OutSet
-    }).onChange((value)=>{
+    }).onChange((value) => {
       // promptAction.showToast({message:value.toString()})
       this.rate = value
     })
