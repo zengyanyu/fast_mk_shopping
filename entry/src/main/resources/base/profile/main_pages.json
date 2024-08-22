@@ -1,7 +1,15 @@
 {
   "src": [
     "pages/Index",
-    "pages/Page10",
-    "pages/Page02"
+    "pages/Page01",
+    "pages/Page02",
+    "pages/Page03",
+    "pages/Page04",
+    "pages/Page05",
+    "pages/Page06",
+    "pages/Page07",
+    "pages/Page08",
+    "pages/Page09_demo",
+    "pages/Page10"
   ]
 }

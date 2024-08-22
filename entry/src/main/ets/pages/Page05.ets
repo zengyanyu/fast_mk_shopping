@@ -6,7 +6,7 @@ import { NavItem } from './Page02'
 
 @Entry
 @Component
-struct Demo05 {
+struct Page05 {
   @State rate: number = 100
   // 数组
   readonly appList: NavItem [] = [
@@ -35,11 +35,14 @@ struct Demo05 {
   @Builder
   slider() {
     Slider({
-      value: $$this.rate,
+      value: this.rate,
       min: 100,
       max: 730,
       style: SliderStyle.OutSet
     })
+      .onChange((value)=>{
+        this.rate = value;
+      })
       .blockColor(Color.White)
       .width('60%')
       .height(50)

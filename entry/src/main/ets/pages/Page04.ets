@@ -1,6 +1,6 @@
 @Entry
 @Component
-struct Demo04 {
+struct Page04 {
   @State sliderWidth: number = 400
   @State sliderHeight: number = 400
 
@@ -8,11 +8,14 @@ struct Demo04 {
   @Builder
   slider() {
     Slider({
-      value: $$this.sliderHeight,
+      value: this.sliderHeight,
       min: 100,
       max: 400,
       style: SliderStyle.OutSet
     })
+      .onChange((value)=>{
+        this.sliderHeight = value;
+      })
       .blockColor(Color.White)
       .width('60%')
       .height(50)
@@ -20,11 +23,14 @@ struct Demo04 {
       .position({ x: '20%', y: '80%' })
 
     Slider({
-      value: $$this.sliderWidth,
+      value: this.sliderWidth,
       min: 100,
       max: 400,
       style: SliderStyle.OutSet
+    }).onChange((value)=>{
+      this.sliderHeight = value
     })
+
       .blockColor(Color.White)
       .width('60%')
       .height(50)

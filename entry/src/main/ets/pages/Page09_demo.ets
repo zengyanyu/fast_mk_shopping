@@ -7,7 +7,7 @@ interface MovieItem {
 
 @Entry
 @Component
-struct Demo09_demo {
+struct Page09_demo {
   @StorageProp('currentBreakpoint') curBp: string = 'sm'
 
   items: MovieItem[] = [

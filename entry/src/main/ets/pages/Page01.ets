@@ -8,11 +8,14 @@ struct Demo01 {
   @Builder
   sliderBuilder() {
     Slider({
-      value: $$this.containerWidth, // 绑定的值
+      value:this.containerWidth, // 绑定的值
       min: 400, // 最小值
       max: 1000, // 最大值
       style: SliderStyle.OutSet // 滑块在滑轨上
     })
+      .onChange((value)=>{
+        this.containerWidth = value;
+      })
       .blockColor(Color.White)
       .width('60%')
       .position({ x: '20%', y: '80%' })

@@ -1,4 +1,3 @@
-import { promptAction } from '@kit.ArkUI'
 
 export interface NavItem {
   id: number

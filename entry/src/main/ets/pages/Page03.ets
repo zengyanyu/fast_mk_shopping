@@ -1,17 +1,20 @@
 @Entry
 @Component
-struct Demo03 {
+struct Page03 {
   @State rate: number = 200
 
   // 底部滑块，可以通过拖拽滑块改变容器尺寸
   @Builder
   slider() {
     Slider({
-      value: $$this.rate,
+      value: this.rate,
       min: 200,
       max: 500,
       style: SliderStyle.OutSet
     })
+      .onChange((value)=>{
+        this.rate = value;
+      })
       .blockColor(Color.White)
       .width('60%')
       .height(50)

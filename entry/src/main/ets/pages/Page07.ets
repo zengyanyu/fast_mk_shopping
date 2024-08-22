@@ -2,7 +2,7 @@ import { NavItem } from './Page02'
 
 @Entry
 @Component
-struct Demo07 {
+struct Page07 {
   @State rate: number = 0.7
   readonly imageList: NavItem [] = [
     { id: 1, icon: $r('app.media.ic_nav_01'), title: '淘金币' },
